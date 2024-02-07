@@ -8,5 +8,4 @@ public class Array_Length{
       // to find the length of an array we have length function
       System.out.println("Array size is "+ arr.length); // 4
   }
-  
 }
