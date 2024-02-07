@@ -1,5 +1,4 @@
 // A program to check even or odd integers
-
 import java.io.*;
 import java.util.*;
 
