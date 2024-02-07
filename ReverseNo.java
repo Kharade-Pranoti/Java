@@ -23,5 +23,4 @@ public class ReverseNo {
 		
 		System.out.println("The reverse number is : "+rev);
 	}
-
 }
