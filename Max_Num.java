@@ -19,6 +19,5 @@ class Max_Num {
 
      // printing the maximum number
 	   System.out.println("The maximum number among two numbers is "+max);
-	   
 	}   
 }
