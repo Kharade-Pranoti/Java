@@ -1,5 +1,4 @@
 // WAP to swap two numbers without using third variable in java
-
 class SwapNOs {
     public static void main(String[] args) {
         int a = 45;
