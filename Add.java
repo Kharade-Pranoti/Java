@@ -17,7 +17,6 @@ public class Addition
 
       int add = a + b;
       System.out.println(a + " + " + b + " = " + add);
-      
-      
+          
     }
   }
