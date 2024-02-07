@@ -30,6 +30,5 @@ public class Continue_stmt
     // Print the result of the product
     System.out.println("Product = "+product);
       
-    
   }
 }
