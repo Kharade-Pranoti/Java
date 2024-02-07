@@ -26,6 +26,5 @@ public class SwappingNumbers
 
     System.out.println("\nAfter Swapping : ");
     System.out.println("no1 = " +no1 + " no2 = " +no2);
-    
   }
 }
