@@ -1,5 +1,4 @@
 // A program to find the armstrong number
-
 import java.util.Scanner;
 
 public class Armstrong {
