@@ -1,5 +1,4 @@
 // A program to find the factorial of a number
-
 import java.util.*;
 
 public class Factorial{
