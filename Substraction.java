@@ -1,5 +1,4 @@
 // A program to do substraction of two numbers
-
 import java.util.Scanner;
 
 public class Sub
