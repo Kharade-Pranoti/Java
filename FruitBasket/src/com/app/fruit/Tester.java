@@ -10,8 +10,10 @@ public class Tester {
 		System.out.println("Enter the size of the basket: ");
 		int basketSize = sc.nextInt();
 		
-		Fruit basket[] = new Fruit[basketSize];
+		Fruit f = new Apple();
+		Fruit basket[] = new Fruit[basketSize];	// array of references
 		int choice;
+		
 		int counter = 0;
 		
 		do {
@@ -57,13 +59,45 @@ public class Tester {
 			FruitUtilityClass.displayFruitsDetailsFromBasket(basket);
 			break;
 			
-//		case 6:
-//			for(int i=0; i<basket.length; i++) {
-//				if(basket[i].getName() == "Red Apple") {
-//					System.out.println();
-//				}
-//			}
-		}
+		case 6:
+			// taking index of the fruit basket array
+			System.out.println("Enter the index number of basket: ");
+			int index = sc.nextInt();
+			
+			// check if at the entered index location apple is there 
+			// if yes then downcast. Access and print the functionality of apple i.e. jam()
+				if(basket[index].getName() == "Kashmiri apple") {
+					//f.jam(); // error
+					
+					// downcasting from Fruit to Apple
+					if(f instanceof Apple) {
+						((Apple)f).jam();
+					}
+				}
+				else if(basket[index].getName() == "Kesari Mango") {
+					//f.pulp(); // error
+					
+					// downcasting from Fruit to Mango
+					if(f instanceof Mango) {
+						((Mango)f).pulp();
+					}
+				}
+				 if(basket[index].getName() == "orange") {
+					//f.pulp(); // error
+						
+					// downcasting from Fruit to Mango
+					if(f instanceof Orange) {
+						((Orange)f).juice();
+					}
+				}
+				else {
+					System.out.println("Enter valid index.");
+				}
+				
+				break;
+				
+				}
+			
 			
 		}while(choice != 7);
 		

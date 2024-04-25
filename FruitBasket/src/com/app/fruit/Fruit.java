@@ -1,10 +1,6 @@
 package com.app.fruit;
 
-public class Fruit {
-	
-	Fruit(){
-		
-	}
+public abstract class Fruit {
 	
 	// properties of fruit
 	private String color;
@@ -12,6 +8,10 @@ public class Fruit {
 	private String name;
 	private boolean fresh = true;
 	
+	Fruit(){
+		
+	}
+
 	// parametrized constructor
 	Fruit(String color, double weight, String name, boolean fresh){
 		this.color = color;
