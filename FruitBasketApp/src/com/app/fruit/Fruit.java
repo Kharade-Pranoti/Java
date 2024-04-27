@@ -7,7 +7,8 @@ public abstract class Fruit {
 	private double weight;
 	private String name;
 	private boolean fresh = true;
-	
+
+	//default constructor
 	Fruit(){
 		
 	}
