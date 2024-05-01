@@ -66,22 +66,17 @@ public class Tester {
 			
 			// check if at the entered index location apple is there 
 			// if yes then downcast. Access and print the functionality of apple i.e. jam()
-				if(basket[index].getName() == "Kashmiri apple") {
-					//f.jam(); // error
-					
-					// downcasting from Fruit to Apple
+				// work in progress
+				
 					if(f instanceof Apple) {
 						((Apple)f).jam();
 					}
-				}
-				else if(basket[index].getName() == "Kesari Mango") {
-					//f.pulp(); // error
-					
-					// downcasting from Fruit to Mango
+				
+				
 					if(f instanceof Mango) {
 						((Mango)f).pulp();
 					}
-				}
+				
 				 if(basket[index].getName() == "orange") {
 					//f.pulp(); // error
 						
