@@ -16,6 +16,17 @@ public class Palindrome {
 			reverse = ch + reverse;
 		}
 		System.out.println(input.equals(reverse)? "Yes, it is palindrome" : "No, it's not palindrome");
+
+		// Second solution
+		// for(int i=input.length()-1; i>=0; i--) {
+		// 	rev = input.charAt(i) + rev;
+		// }
+		
+		// if(input == rev) {
+		// 	System.out.println("Palindrome");
+		// }else {
+		// 	System.out.println("Not palindrome");
+		// }
 		
 		sc.close();
 
