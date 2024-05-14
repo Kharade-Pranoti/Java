@@ -8,7 +8,7 @@ import static com.app.utils.DatabaseUtils.openConnection;
 import com.app.core.*;
 import static com.app.utils.DatabaseUtils.closeConnection;
 
-
+// User DAO implementation class
 public class UserDaoImpl implements UserDao {
 	
 	// state
