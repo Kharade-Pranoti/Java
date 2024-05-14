@@ -6,6 +6,7 @@ import java.sql.Date;
 
 import com.app.core.*;
 
+// User DAO Interface
 public interface UserDao {
 
 	// user login
