@@ -29,7 +29,8 @@ public class StudentDetails {
 			
 			// functional literal for the comparator
 			Comparator<Student> nameComparator = (s1, s2) -> s1.getName().compareTo(s2.getName());
-			
+
+			// values() converts the Map into the collection type
 			Stream<Student> students = map.values()
 			.stream()
 			.sorted(nameComparator);

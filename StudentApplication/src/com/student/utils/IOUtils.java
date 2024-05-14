@@ -5,7 +5,8 @@ import com.app.core.*;
 import java.io.*;
 
 public interface IOUtils {
-	
+
+	// static method to store the student details in buffered manner into the text file.
 	static void storeDetails(Stream<Student> studentStream, String filename) {
 		System.out.println("Inside the storeDetails function");
 		
