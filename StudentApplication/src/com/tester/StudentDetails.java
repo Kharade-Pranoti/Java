@@ -35,7 +35,6 @@ public class StudentDetails {
 			.stream()
 			.sorted(nameComparator);
 			//.forEach(i -> System.out.println(i + " "));
-			System.out.println("The sorting of data as per name is completed.");
 			
 			System.out.println("Enter the file name in which you want to store the data:");
 			storeDetails(students, sc.nextLine());
@@ -47,7 +46,6 @@ public class StudentDetails {
 		
 		System.out.println("Main over");
 		
-
 	}
 
 }
