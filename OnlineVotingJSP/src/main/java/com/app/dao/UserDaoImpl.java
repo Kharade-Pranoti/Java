@@ -35,7 +35,8 @@ public class UserDaoImpl implements UserDao {
 		// delete voter details
 		// get all voter details
 	}
-	
+
+	// voter sign up method
 	@Override
 	public User signIn(String email, String password) throws SQLException {
 		// 1. set IN params
@@ -52,7 +53,8 @@ public class UserDaoImpl implements UserDao {
 		}
 		return null;
 	}
-	
+
+	// getting user details between the specified dates
 	@Override
 	public List<User> userDetails(Date begin, Date end) throws SQLException {
 		// 0. create empty list
@@ -69,6 +71,7 @@ public class UserDaoImpl implements UserDao {
 		return users;// dao rets populated list of users to the caller
 	}
 
+	// new voter registration method
 	@Override
 	public String voterRegistration(User newVoter) throws SQLException {
 		pst3.setString(1, newVoter.getFirstName());
@@ -85,6 +88,7 @@ public class UserDaoImpl implements UserDao {
 		return "Voter registration failed !";
 	}
 
+	// to change or update a password - resetting new password
 	@Override
 	public String changePassword(String email, String oldPwd, String newPwd) throws SQLException {
 		// 1. set IN params
@@ -97,13 +101,15 @@ public class UserDaoImpl implements UserDao {
 			return "Password Changed !";
 		return "Changing password  failed(invalid credentials or role )!!!!";
 	}
-	
+
+	// deleting the voter details through ID
 	@Override
 	public String deleteVoterDetails(int voterId) throws SQLException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
+	// updating the voting status through voter ID
 	@Override
 	public String updateVotingStatus(int voterId) throws SQLException {
 		// set IN param
@@ -114,7 +120,8 @@ public class UserDaoImpl implements UserDao {
 			return "Voted Successfully !";
 		return "Voting failed....";
 	}
-	
+
+	// diplay all the voter details registered
 	@Override
 	public User displayUserDetails(int voterId) throws SQLException {
 		// TODO Auto-generated method stub
