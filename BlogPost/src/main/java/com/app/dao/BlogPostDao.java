@@ -5,6 +5,7 @@ import javax.persistence.*;
 import java.util.List;
 import com.app.entities.*;
 
+// BlogPostDao interface for post
 public interface BlogPostDao {
 
 	// A method to create a new post
