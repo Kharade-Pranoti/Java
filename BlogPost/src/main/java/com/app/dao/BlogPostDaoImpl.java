@@ -7,6 +7,7 @@ import org.hibernate.*;
 
 public class BlogPostDaoImpl implements BlogPostDao{
 
+	// creating a new blog post
 	@Override
 	public String createBlogPost(String title, String content, String description) {
 		BlogPost newPost = null;
@@ -42,6 +43,7 @@ public class BlogPostDaoImpl implements BlogPostDao{
 		return msg;
 	}
 
+	// displaying all the blog post
 	@Override
 	public List<BlogPost> displayAllPost() {
 		List<BlogPost> allPosts = null;
@@ -69,6 +71,7 @@ public class BlogPostDaoImpl implements BlogPostDao{
 		return allPosts;
 	}
 
+	// display only the specific post through the title name of the post
 	@Override
 	public BlogPost displaySpecificPost(String title) {
 		BlogPost post = null;
