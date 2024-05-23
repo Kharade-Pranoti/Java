@@ -186,5 +186,33 @@ public class UserDaoImpl implements UserDao {
 		return mesg;
 	}
 	
-
+	@Override
+	public List<String> displayAllUserBornAtSpecifiedDatesAndRole(LocalDate start, LocalDate end, Role role) {
+		List<String> users = null;
+		
+		// jpql query to display the users between specified dates and role
+		String jpql = "select u.firstName from User u where u.dob between :start and :end and u.role = :role";
+		
+		// get the session
+		Session session = getFactory().getCurrentSession();
+		
+		// get the transaction
+		Transaction tx = session.beginTransaction();
+		
+		try {
+			users = session.createQuery(jpql, String.class)
+					.setParameter("start", start)
+					.setParameter("end", end)
+					.setParameter("role", role)
+					.getResultList();
+			
+			tx.commit();
+		}
+		catch(RuntimeException e) {
+			tx.rollback();
+		throw e;
+		}
+		
+		return users;
+	}
 }
