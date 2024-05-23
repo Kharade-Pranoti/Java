@@ -25,4 +25,8 @@ public interface UserDao {
 	// add a method for user's change password
 	String changePassword(String email, String oldPwd, String newPwd);
 
+	// add a method to display all user first names born between start date and end date and
+	// under a specific role
+	List<User> displayAllUserBornAtSpecifiedDatesAndRole(LocalDate start, LocalDate end, Role role);
+
 }
