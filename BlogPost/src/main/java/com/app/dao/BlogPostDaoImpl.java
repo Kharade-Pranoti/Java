@@ -19,17 +19,11 @@ public class BlogPostDaoImpl implements BlogPostDao{
 		// begin the transaction
 		Transaction tx = session.beginTransaction();
 		
-		// JPQL Query
-		String jpql = "insert into BlogPost values(post.title = :tile,"
-				+ "post.content = :content, post.description = :description)";
+		
 		
 		// CRUD operation
 		try {
-			newPost = session.createQuery(jpql, BlogPost.class)
-					.setParameter("title", title) //1st param
-					.setParameter("content", content) // 2nd param
-					.setParameter("description", description)
-					.getSingleResult();
+			session.save(newPost);
 			tx.commit();
 			
 			// => post created successfully
