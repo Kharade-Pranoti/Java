@@ -19,8 +19,6 @@ public class BlogPostDaoImpl implements BlogPostDao{
 		// begin the transaction
 		Transaction tx = session.beginTransaction();
 		
-		
-		
 		// CRUD operation
 		try {
 			session.save(newPost);
