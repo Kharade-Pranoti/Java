@@ -1,4 +1,3 @@
-package com.love.babbar;
 
 import java.util.Scanner;
 
